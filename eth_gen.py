@@ -7,12 +7,9 @@ def generate_address(desired_prefixes):
     try:
         while not all(found_addresses.values()):
             count += 1
-            
+
             mnemonic = Bip39MnemonicGenerator().FromWordsNumber(12)
-
-
             seed_bytes = Bip39SeedGenerator(mnemonic).Generate()
-
 
             bip44_ctx = Bip44.FromSeed(seed_bytes, Bip44Coins.ETHEREUM)
             bip44_acc_ctx = bip44_ctx.Purpose().Coin().Account(0)
@@ -29,6 +26,9 @@ def generate_address(desired_prefixes):
                 if address.lower().startswith(prefix.lower()) and found_addresses[prefix] is None:
                     found_addresses[prefix] = (address, mnemonic)
                     print(f"Найден адрес с префиксом {prefix}: {address}")
+                    with open('wallets.txt', 'a') as f:
+                        f.write(f"Адрес: {address}, Мнемоническая фраза: {mnemonic}\n")
+                        print("Мнемоническая фраза успешно записана в файл wallets.txt")
                     break
 
     except KeyboardInterrupt:
