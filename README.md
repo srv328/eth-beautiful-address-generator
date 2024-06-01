@@ -20,3 +20,4 @@ this python script allows you to generate eth addresses with your prefixies
 1. Префикс: d34d, Адрес: 0xd34De5c8E2cF939486152685B421336203E196d7, Мнемоническая фраза: food gap age tissue tenant sting toast august library any film margin
 2. Префикс: aabbcc, Адрес: 0xaaBbCc3985A8f530DdB8e897167F5b60a036082D, Мнемоническая фраза: two lounge deliver wisdom lobster coffee stage crouch frown wood gown salmon
 3. Префикс: dead, Адрес: 0xdEAD3b5dcE117b548f8A89B12Dcaf7e2dcc57e7f, Мнемоническая фраза: gun patient agree unhappy good fade ancient swap gather wheat odor pond
+4. Префикс: 0x12345, Адрес: 0x123457d0A6Be3624e7b824F119027a0b12541c91, Мнемоническая фраза: blood life powder oval arctic abandon elevator yellow shoulder pet space scrap
